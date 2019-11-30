@@ -12,8 +12,8 @@
         <%= idea.description %>
         <%= image_tag idea.picture_url, width: '100%' if idea.picture.present? %>
         <div>
-          <%= link_to "edit", edit_idea_path(idea) %>
-          <%= button_to "destroy", idea_path(idea), method: :delete %>
+          <%= link_to "Edit", edit_idea_path(idea) %>
+          <%= button_to "Destroy", idea_path(idea), method: :delete %>
         </div>
       </div>
     <% end %>
